@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- collegamento di vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>VueToDoList</title>
 </head>
 <body>
+
+    <header>
+    </header>
+
+    <main>
+        <div id="app">
+            <ul>
+
+            </ul>
+            <input type="text" v-model="newTodoText" placeholder="Aggiungi attività">
+            <button @click="AddActivities">Aggiungi Attività</button>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
     
     <script src="./js/script.js"></script>
 </body>
