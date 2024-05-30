@@ -2,8 +2,8 @@ const {createApp} = Vue;
 createApp({
     data() {
         return {
-            todos: [
-                { text: 'fai allenamento', done: false },
+            todolist: [
+                { text: 'fai allenamento', done: true },
                 { text: 'fai la spesa', done: false },
                 { text: 'fai esercizio', done: false },
                 { text: 'fai riposo pomeridiano', done: false },
@@ -13,7 +13,7 @@ createApp({
     },
     methods: {
         removeTodo(index) {
-            this.todos.splice(index, 1);
+            this.todolist.splice(index, 1);
         }
     }
 }).mount('#app');

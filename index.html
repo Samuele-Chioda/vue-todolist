@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <!-- collegamento di vue -->
+    <!-- collegamento di vue 3 -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>VueToDoList</title>
 </head>
@@ -18,12 +18,13 @@
         <div id="app">
             <h1>ToDoList</h1>
             <ul>
-                <li v-for="(todo, index) in todos" :key="todo.text" :class="{ done: todo.done }" >
+                <li v-for="(todo, index) in todolist" :key="todo.text" :class="{ done: todo.done }" >
                     {{todo.text}}
-                    <button @click="removeTodo(index)"><i class="fa-regular fa-trash-can"></i></button>
+                    <button @click="removeTodo(index)"><i class="fa-regular fa-trash-can"></i>
+                    </button>
                 </li>
             </ul>
-            <input type="text" v-model="newTodoText" placeholder="Aggiungi attività">
+            <input type="text" v-model="newTodoText" placeholder="scrivi ciò che devi fare">
             <button @click="AddActivities">Aggiungi Attività</button>
         </div>
     </main>
