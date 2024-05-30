@@ -24,8 +24,10 @@
                     </button>
                 </li>
             </ul>
-            <input type="text" v-model="newTodoText" placeholder="scrivi ciò che devi fare">
-            <button @click="AddActivities">Aggiungi Attività</button>
+            <div>
+                <input v-model="newTodo" @keyup.enter="addTodo" placeholder="Aggiungi un'attività">
+            <button @click="addTodo">Aggiungi Attività</button>
+            </div>
         </div>
     </main>
 
