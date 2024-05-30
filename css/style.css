@@ -3,3 +3,30 @@
     margin:0;
     box-sizing:border-box;
 }
+
+.done{
+    text-decoration: line-through;
+}
+
+div#app{
+    max-width: 600px;
+    margin:0 auto;
+    background-color: brown;
+    text-align: center;
+    padding:1rem;
+}
+
+ul{
+    text-decoration: none;
+}
+
+li{
+    margin-bottom: 1rem;
+    text-decoration: none;
+
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
